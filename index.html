@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="text-center text-capitalize text-warning my-3">book list</h2>
+
+        <form action="" id="book_form">
+            <input type="text" class="form-control mb-2" id="title" placeholder="Book Title">
+            <input type="text" class="form-control mb-2" id="author" placeholder="Author Name">
+            <input type="text" class="form-control mb-2" id="isbn" placeholder="ISBN Number">
+            <input type="submit" value="Add" class="btn btn-primary w-100">
+        </form>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Book Name</th>
+                    <th>Author Name</th>
+                    <th>ISBN Number</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="book_list"></tbody>
+        </table>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
